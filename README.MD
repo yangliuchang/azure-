@@ -4,32 +4,21 @@
 
 ### 🍾 用 telegram bot 管理 Azure 虚拟机
 
+本人非bot作者，拷贝自hpg的bot
+目前该bot已更新
+默认创建为azure免费的64g硬盘
+硬盘大小只需更改config文件中DISK_SIZE_DEFAULT如下：
+"VM": {
+       "DISK_SIZE_DEFAULT": *默认磁盘大小,
+       "LOCATIONS": {
+
+
 ### 🔖 主要功能
 
 + 管理 Azure 账号，管理账号订阅
 + 创建和管理 Azure 虚拟机，更换虚拟机 IP
 
-### 📦 部分截图
 
-1. 账号添加和管理
-
-   ![](.README.MD_images/e815d712.png)
-
-   ![](.README.MD_images/7f1ab67c.png)
-
-   ![](.README.MD_images/abd90457.png)
-
-2. 实例创建和管理
-
-   ![](.README.MD_images/b69421f5.png)
-
-   ![](.README.MD_images/03508508.png)
-
-   ![](.README.MD_images/f71ed087.png)
-
-   ![](.README.MD_images/c082551f.png)
-
-   ![](.README.MD_images/0655ae9e.png)
 
 ### 🌌 用法
 
@@ -140,16 +129,8 @@
    /az*
    ```
 
-   ![](.README.MD_images/31851b79.png)
-
 ### 🐛 使用问题
 
 + 不是通过 bot 创建的虚拟机可能更换 IP 等操作失败
 + 不支持多个订阅的账号
 + 由于使用设备码 `(device code)` 授权，token 有效期只有 3 个月，之后需要重新添加
-
-***
-
-+ bot 年久失修，满足日常简单需求，不再维护
-+ 新版网页版 Azure 小助手已经发布
-
